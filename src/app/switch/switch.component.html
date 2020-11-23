@@ -1,0 +1,16 @@
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * Switch Component  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<p *ngIf="this.switchLabel">{{this.switchLabel}}</p>
+<div class="toggle-switch">
+    <input type="checkbox" class="toggle-switch-checkbox" name="toggleSwitch" id="toggleSwitch"
+        (keyup.Space)="this.changeSwitchEvent()" [(ngModel)]="this.switchFlag" [disabled]="this.disabled"
+        (change) = "this.changeSwitchEvent()"
+        />
+    <label class="toggle-switch-label" for="toggleSwitch">
+        <span class="toggle-switch-inner"></span>
+        <span class="toggle-switch-switch"></span>
+    </label>
+</div>
+<!-- * * * * * * * * * * * ________________________________ * * * * * * * * * * * -->
