@@ -1,0 +1,13 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * App Component for Loading Project Assignment * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<p>{{this.title}}</p>
+
+<!-- * * * * * * * * * * *  Switch Component * * * * * * * * * * * -->
+<app-switch [(switchFlag)] = "this.toggleFlag" [switchLabel] = "this.label"
+[disabled] = "this.disabledToggle"
+></app-switch>
+<p>Toggle Flag Value : {{this.toggleFlag}}</p>
+<!-- * * * * * * * * * * * ________________________________ * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
